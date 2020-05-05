@@ -7,7 +7,7 @@ interface FormProps {
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #3a3a3a;
+  color: #50fa7b;
   max-width: 450px;
   line-height: 56px;
 
@@ -33,33 +33,33 @@ export const Form = styled.form<FormProps>`
     ${(props) =>
       props.hasError &&
       css`
-        border-color: #c53030;
+        border-color: #ff5555;
       `}
 
     &::placeholder {
-      color: #a8a8b3;
+      color: #6272a4;
     }
   }
 
   button {
     width: 210px;
     height: 70px;
-    background: #04d361;
+    background: #44475a;
     border-radius: 0px 5px 5px 0px;
     border: 0;
-    color: #fff;
+    color: #f8f8f2;
     font-weight: bold;
     transition: background-color 0.2s;
 
     &:hover {
-      background: ${shade(0.2, '#04d361')};
+      background: ${shade(0.2, '#44475a')};
     }
   }
 `;
 
 export const Error = styled.span`
   display: block;
-  color: #c53030;
+  color: #ff5555;
   margin-top: 8px;
 `;
 
@@ -68,7 +68,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #fff;
+    background: #44475a;
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -98,12 +98,12 @@ export const Repositories = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: #f8f8f2;
       }
 
       p {
         font-size: 18px;
-        color: #a8a8b3;
+        color: #bd93f9;
         margin-top: 4px;
       }
     }
